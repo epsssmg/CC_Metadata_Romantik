@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Clinic Romantik & Metadata | Diskominfo Kota Semarang</title>
+    <!-- Memuat Tailwind CSS untuk styling responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat Google Fonts: Caveat (tulisan tangan "Coaching Clinic") & Montserrat (judul tegas & tombol) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Memuat Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        script: ['Caveat', 'cursive'],
+                    },
+                    colors: {
+                        navyPrimary: '#0B3B70',
+                        navyDark: '#07274D',
+                        blueRoyal: '#1557A0',
+                        blueSoft: '#D9EBFA',
+                        redSemarang: '#D62828',
+                        accentOrange: '#F3A81D',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-navyPrimary min-h-screen flex flex-col justify-between font-sans antialiased relative overflow-x-hidden selection:bg-blueRoyal selection:text-white">
+
+    <!-- Dekorasi Gelombang Abstrak Biru Halus di Latar Belakang Atas -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-blue-100/70 blur-3xl"></div>
+        <div class="absolute top-1/3 -left-24 w-80 h-80 rounded-full bg-sky-100/80 blur-3xl"></div>
+        <div class="hidden lg:block absolute bottom-10 right-1/3 w-96 h-96 rounded-full bg-indigo-100/50 blur-3xl"></div>
+    </div>
+
+    <!-- Container Utama: 1 Kolom di HP, 2 Kolom Sejajar di Desktop (lg:max-w-5xl) -->
+    <div class="relative z-10 w-full max-w-md lg:max-w-5xl mx-auto px-5 sm:px-8 pt-7 lg:py-12 pb-12 flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-12">
+        
+        <!-- Kolom Kiri (Header Logo & Judul Utama Acara) -->
+        <div class="w-full lg:w-7/12 flex flex-col items-center lg:items-start text-center lg:text-left">
+            
+            <!-- Header Logo Instansi (Pemkot Semarang & Diskominfo) -->
+            <header class="w-full flex items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-6 lg:mb-8">
+                <!-- Logo Pemerintah Kota Semarang -->
+                <div class="flex items-center gap-2">
+                    <svg class="w-9 h-11 lg:w-10 lg:h-12 shrink-0" viewBox="0 0 64 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6H58V42C58 58 32 72 32 72C32 72 6 58 6 42V6Z" fill="#FACC15" stroke="#1E293B" stroke-width="3.5"/>
+                        <path d="M12 12H52V40C52 52 32 64 32 64C32 64 12 52 12 40V12Z" fill="#0F172A"/>
+                        <rect x="29" y="22" width="6" height="26" fill="#F8FAFC"/>
+                        <polygon points="32,14 27,22 37,22" fill="#EF4444"/>
+                        <rect x="23" y="48" width="18" height="5" fill="#FACC15"/>
+                    </svg>
+                    <div class="text-left leading-tight text-slate-900">
+                        <div class="text-[10px] sm:text-[11px] lg:text-xs font-extrabold tracking-tight">PEMERINTAH</div>
+                        <div class="text-[10px] sm:text-[11px] lg:text-xs font-extrabold tracking-tight">KOTA SEMARANG</div>
+                    </div>
+                </div>
+
+                <!-- Logo Diskominfo Kota Semarang -->
+                <div class="flex items-center gap-2">
+                    <svg class="w-10 h-10 lg:w-11 lg:h-11 shrink-0" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="26" fill="#1E3A8A"/>
+                        <path d="M10 26C20 18 44 18 54 26" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M8 36C22 28 42 28 56 36" stroke="#93C5FD" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M14 45C25 39 39 39 50 45" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+                        <rect x="30" y="14" width="4" height="36" fill="#FFFFFF"/>
+                        <polygon points="32,8 28,15 36,15" fill="#FACC15"/>
+                    </svg>
+                    <div class="text-left leading-none">
+                        <div class="text-sm sm:text-base lg:text-lg font-extrabold text-[#1E2270] tracking-tight">DISKOMINFO</div>
+                        <div class="text-xs sm:text-sm font-bold text-[#1E2270] leading-tight">Kota Semarang</div>
+                        <div class="mt-0.5 bg-[#1E2270] text-white text-[5.5px] sm:text-[6px] lg:text-[7px] px-1.5 py-0.5 rounded-sm font-semibold tracking-tight">
+                            Dinas Komunikasi, Informatika, Statistik dan Persandian
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Judul Utama Acara -->
+            <section class="w-full mb-2 lg:mb-0">
+                <!-- Tulisan "Coaching Clinic" bergaya Brush Script dengan aksen garis kuning -->
+                <div class="relative inline-block mb-2">
+                    <h2 class="font-script text-5xl sm:text-6xl lg:text-7xl text-navyPrimary tracking-wide leading-none transform -rotate-1 select-none">
+                        Coaching Clinic
+                    </h2>
+                    <!-- Aksen 3 garis pancaran kuning di kanan atas -->
+                    <svg class="w-7 h-7 lg:w-9 lg:h-9 text-accentOrange absolute -top-2 -right-6 lg:-right-8" viewBox="0 0 40 40" fill="none">
+                        <path d="M6 14L18 6" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <path d="M10 23L26 18" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <path d="M11 32L25 33" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                    </svg>
+                    <!-- Garis melengkung kuning di bawah tulisan Coaching Clinic -->
+                    <svg class="w-full h-3 lg:h-3.5 text-accentOrange -mt-0.5" viewBox="0 0 260 14" fill="none" preserveAspectRatio="none">
+                        <path d="M4 10C80 3 180 3 256 9" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <!-- Judul Kegiatan -->
+                <h1 class="text-base sm:text-lg lg:text-2xl font-extrabold text-navyPrimary tracking-tight leading-snug mt-1 px-1 lg:px-0">
+                    Pengajuan Rekomendasi Kegiatan Statistik (Romantik) dan Penyusunan Metadata Statistik Sektoral
+                </h1>
+
+                <!-- Pill Subjudul dengan garis horizontal di kiri & kanan -->
+                <div class="flex items-center justify-center lg:justify-start gap-2 my-3.5 lg:my-4">
+                    <span class="h-[2px] w-4 sm:w-7 lg:hidden bg-navyPrimary/60 rounded-full shrink-0"></span>
+                    <div class="bg-navyPrimary text-white text-[11px] sm:text-xs lg:text-sm font-bold tracking-wide px-4 lg:px-5 py-1.5 rounded-full shadow-xs">
+                        di Lingkungan Pemerintah Kota Semarang
+                    </div>
+                    <span class="h-[2px] w-4 sm:w-7 lg:w-12 bg-navyPrimary/60 rounded-full shrink-0"></span>
+                </div>
+
+                <!-- Badge Tanggal & Tempat dengan Ikon Kalender -->
+                <div class="inline-flex items-center gap-2.5 bg-blueSoft border border-blue-200/80 text-navyPrimary font-semibold text-xs sm:text-sm lg:text-base px-4 py-2 rounded-xl shadow-xs mt-1">
+                    <span class="bg-navyPrimary text-white p-1.5 rounded-lg">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                    </span>
+                    <span>Semarang, 25 November 2026</span>
+                </div>
+            </section>
+        </div>
+
+        <!-- Kolom Kanan (Kartu Kontainer Utama Berwarna Biru Gradasi dengan Aksen Garis Merah) -->
+        <main class="w-full lg:w-5/12 bg-gradient-to-b from-blueRoyal to-navyPrimary rounded-[32px] p-5 sm:p-6 lg:p-7 shadow-xl border-b-4 border-redSemarang">
+            <div class="hidden lg:block text-white/90 text-xs font-bold uppercase tracking-wider mb-4 px-1">
+                Tautan & Dokumen Kegiatan
+            </div>
+            <div class="space-y-3.5 lg:space-y-4">
+                
+                <!-- Tombol 1: SURAT UNDANGAN (Google Drive PDF Preview) -->
+                <button type="button" onclick="openInPage('SURAT UNDANGAN', 'https://drive.google.com/file/d/1rHBhH3J5f6pBoJKfIGDaGG46GDeYxRpV/preview', 'https://drive.google.com/file/d/1rHBhH3J5f6pBoJKfIGDaGG46GDeYxRpV/view')" class="group flex items-center justify-between w-full py-3.5 px-5 bg-white hover:bg-blue-50 active:scale-[0.98] text-navyPrimary font-extrabold text-sm sm:text-base tracking-wide rounded-2xl shadow-sm transition-all duration-150 text-left">
+                    <span class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-lg bg-blueSoft text-navyPrimary flex items-center justify-center group-hover:bg-navyPrimary group-hover:text-white transition-colors">
+                            <i data-lucide="mail-open" class="w-4 h-4"></i>
+                        </span>
+                        <span>SURAT UNDANGAN</span>
+                    </span>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-navyPrimary/60 group-hover:translate-x-0.5 transition-transform"></i>
+                </button>
+
+                <!-- Tombol 2: DAFTAR HADIR (Google Form Embedded) -->
+                <button type="button" onclick="openInPage('DAFTAR HADIR', 'https://docs.google.com/forms/d/e/1FAIpQLScMn9zSCBy_Imis-Ceav6qVdw3koer2xBWXwSp6wS1ftz6Ogw/viewform?embedded=true', 'https://docs.google.com/forms/d/e/1FAIpQLScMn9zSCBy_Imis-Ceav6qVdw3koer2xBWXwSp6wS1ftz6Ogw/viewform')" class="group flex items-center justify-between w-full py-3.5 px-5 bg-white hover:bg-blue-50 active:scale-[0.98] text-navyPrimary font-extrabold text-sm sm:text-base tracking-wide rounded-2xl shadow-sm transition-all duration-150 text-left">
+                    <span class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-lg bg-blueSoft text-navyPrimary flex items-center justify-center group-hover:bg-navyPrimary group-hover:text-white transition-colors">
+                            <i data-lucide="clipboard-check" class="w-4 h-4"></i>
+                        </span>
+                        <span>DAFTAR HADIR</span>
+                    </span>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-navyPrimary/60 group-hover:translate-x-0.5 transition-transform"></i>
+                </button>
+
+                <!-- Tombol 3: MATERI & PANDUAN (Google Drive Folder Embedded View) -->
+                <button type="button" onclick="openInPage('MATERI & PANDUAN', 'https://drive.google.com/embeddedfolderview?id=1YNagX8CjeUjWhIprmxv6BwQ5xA5QlIEn#list', 'https://drive.google.com/drive/folders/1YNagX8CjeUjWhIprmxv6BwQ5xA5QlIEn?usp=sharing')" class="group flex items-center justify-between w-full py-3.5 px-5 bg-white hover:bg-blue-50 active:scale-[0.98] text-navyPrimary font-extrabold text-sm sm:text-base tracking-wide rounded-2xl shadow-sm transition-all duration-150 text-left">
+                    <span class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-lg bg-blueSoft text-navyPrimary flex items-center justify-center group-hover:bg-navyPrimary group-hover:text-white transition-colors">
+                            <i data-lucide="folder-down" class="w-4 h-4"></i>
+                        </span>
+                        <span>MATERI & PANDUAN</span>
+                    </span>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-navyPrimary/60 group-hover:translate-x-0.5 transition-transform"></i>
+                </button>
+
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Modal / Tampilan Embedded di Dalam Halaman (In-Page Viewer) -->
+    <div id="inpage-modal" class="fixed inset-0 z-50 hidden flex-col bg-slate-100">
+        <!-- Header Navigasi Modal -->
+        <div class="bg-navyPrimary text-white px-4 sm:px-6 py-3 flex items-center justify-between shadow-md shrink-0">
+            <div class="flex items-center gap-3 min-w-0">
+                <button type="button" onclick="closeInPage()" class="inline-flex items-center gap-1.5 bg-white/15 hover:bg-white/25 text-white text-xs sm:text-sm font-bold px-3 py-1.5 rounded-xl transition-colors shrink-0">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                    <span>Kembali</span>
+                </button>
+                <h3 id="modal-title" class="text-sm sm:text-base font-bold truncate">Judul Dokumen</h3>
+            </div>
+            <!-- Tombol Cadangan jika situs tujuan menolak iframe (X-Frame-Options) -->
+            <a id="modal-fallback-link" href="#" target="_self" class="inline-flex items-center gap-1.5 bg-accentOrange hover:bg-amber-500 text-navyDark text-xs font-extrabold px-3 py-1.5 rounded-xl transition-colors shrink-0 ml-2">
+                <span>Buka Penuh</span>
+                <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+            </a>
+        </div>
+
+        <!-- Area Konten Iframe -->
+        <div class="relative flex-1 w-full bg-white">
+            <!-- Indikator Loading -->
+            <div id="iframe-loader" class="absolute inset-0 flex flex-col items-center justify-center bg-slate-50 text-navyPrimary gap-2 z-0">
+                <div class="w-8 h-8 border-4 border-blueSoft border-t-navyPrimary rounded-full animate-spin"></div>
+                <span class="text-xs font-semibold">Memuat halaman...</span>
+            </div>
+            <iframe id="inpage-iframe" src="about:blank" class="relative z-10 w-full h-full border-0" onload="hideLoader()"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer dengan Aksen Gelombang Merah-Biru ala Banner -->
+    <footer class="relative z-10 w-full pt-6">
+        <div class="text-center pb-3 text-[11px] font-semibold text-navyPrimary/75">
+            Diskominfo Kota Semarang • Bidang Statistik
+        </div>
+        <!-- Strip warna merah & biru khas banner -->
+        <div class="w-full h-2.5 bg-redSemarang relative overflow-hidden">
+            <div class="w-1/3 h-full bg-blueRoyal rounded-r-full"></div>
+        </div>
+    </footer>
+
+    <!-- Komponen Notifikasi Toast (Pengganti alert) -->
+    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-4 py-2.5 rounded-xl bg-navyDark text-white text-xs sm:text-sm font-semibold shadow-xl opacity-0 pointer-events-none transition-all duration-300 translate-y-4 border border-blue-400/30">
+        <i data-lucide="info" class="w-4 h-4 text-accentOrange shrink-0"></i>
+        <span id="toast-message">Memuat tautan...</span>
+    </div>
+
+    <script>
+        // Inisialisasi ikon Lucide
+        lucide.createIcons();
+
+        // Membuka URL langsung di dalam halaman menggunakan iframe modal
+        function openInPage(title, embedUrl, directUrl) {
+            const modal = document.getElementById('inpage-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const iframe = document.getElementById('inpage-iframe');
+            const fallbackLink = document.getElementById('modal-fallback-link');
+            const loader = document.getElementById('iframe-loader');
+
+            modalTitle.textContent = title;
+            fallbackLink.href = directUrl || embedUrl;
+            loader.classList.remove('hidden');
+            iframe.src = embedUrl;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        // Menutup tampilan modal dan kembali ke halaman utama
+        function closeInPage() {
+            const modal = document.getElementById('inpage-modal');
+            const iframe = document.getElementById('inpage-iframe');
+
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            iframe.src = 'about:blank';
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        function hideLoader() {
+            const loader = document.getElementById('iframe-loader');
+            if (loader) loader.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
